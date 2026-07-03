@@ -102,13 +102,6 @@
 
 <img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
-> [!IMPORTANT]
-> ### 🧪 QUANTUM CALIBRATION ARRAY
-> The local operational environment is calibrated according to Heisenberg's Uncertainty Principle:
-> $$\Delta x \cdot \Delta p \ge \frac{\hbar}{2}$$
-
-<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
-
 ## 📊 3D CONTRIBUTION KINETICS (ISOMETRIC MATRIX)
 
 <table width="100%">
