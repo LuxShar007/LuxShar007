@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <!-- Neon Glow Filter for Jedi Lightsaber -->
+    <filter id="purple-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Neon Glow Filter for Vader Lightsaber -->
+    <filter id="red-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Neon Glow Filter for Sparks -->
+    <filter id="spark-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .terminal-bg {
+      fill: #03030c;
+      stroke: #1e293b;
+      stroke-width: 2px;
+    }
+    .text-base {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      fill: #94a3b8;
+    }
+    .text-title {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 12px;
+      fill: #64748b;
+      font-weight: bold;
+    }
+    .text-highlight {
+      fill: #e2e8f0;
+      font-weight: bold;
+    }
+    .text-jedi {
+      fill: #a855f7;
+      font-weight: bold;
+    }
+    .text-vader {
+      fill: #f43f5e;
+      font-weight: bold;
+    }
+    .text-status {
+      fill: #10b981;
+      font-weight: bold;
+    }
+    .text-trooper {
+      fill: #cbd5e1;
+    }
+
+    /* Troopers Cheering Animation */
+    @keyframes bob-alpha {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-3px); }
+    }
+    @keyframes bob-omega {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(3px); }
+    }
+    .troopers-alpha {
+      animation: bob-alpha 1.2s ease-in-out infinite;
+      transform-origin: 400px 80px;
+    }
+    .troopers-omega {
+      animation: bob-omega 1.5s ease-in-out infinite;
+      transform-origin: 400px 335px;
+    }
+
+    /* Lightsaber Clash Vibrations */
+    @keyframes vibrate-jedi-saber {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+      66% { transform: translate(1px, -1px) rotate(0.5deg); }
+    }
+    @keyframes vibrate-vader-saber {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33% { transform: translate(1px, -1px) rotate(0.5deg); }
+      66% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+    }
+    .jedi-saber {
+      animation: vibrate-jedi-saber 0.12s linear infinite;
+      transform-origin: 275px 220px;
+      filter: url(#purple-glow);
+    }
+    .vader-saber {
+      animation: vibrate-vader-saber 0.12s linear infinite;
+      transform-origin: 515px 220px;
+      filter: url(#red-glow);
+    }
+
+    /* Clash Sparks Pulsing */
+    @keyframes spark-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
+    }
+    .clash-center {
+      animation: spark-pulse 0.08s linear infinite;
+      transform-origin: 395px 255px;
+    }
+
+    /* Glowing Text Label Pulse */
+    @keyframes pulse-purple-text {
+      0%, 100% { fill: #a855f7; opacity: 0.8; }
+      50% { fill: #c084fc; opacity: 1; }
+    }
+    @keyframes pulse-red-text {
+      0%, 100% { fill: #f43f5e; opacity: 0.8; }
+      50% { fill: #fb7185; opacity: 1; }
+    }
+    .jedi-label {
+      animation: pulse-purple-text 1s infinite alternate;
+    }
+    .vader-label {
+      animation: pulse-red-text 1s infinite alternate;
+    }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect x="5" y="5" width="790" height="410" rx="8" ry="8" class="terminal-bg" />
+
+  <!-- Terminal Header Line and Buttons -->
+  <path d="M 5 32 L 795 32" stroke="#1e293b" stroke-width="2" />
+  <circle cx="20" cy="18" r="6" fill="#f43f5e" />
+  <circle cx="38" cy="18" r="6" fill="#fbbf24" />
+  <circle cx="56" cy="18" r="6" fill="#10b981" />
+  <text x="400" y="22" class="text-title" text-anchor="middle">OPERATIONAL MATRIX: SITH_VS_JEDI_MATRIX.SYS</text>
+
+  <!-- Top Platform - Alpha -->
+  <text x="50" y="60" class="text-base">[ OBSERVATION PLATFORM ALPHA ] - 1ST BATTALION CLONE SOLDIERS</text>
+  
+  <!-- Cheering Troopers (Alpha) -->
+  <g class="troopers-alpha">
+    <text x="65" y="80" class="text-base text-trooper">\o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/</text>
+  </g>
+
+  <!-- Alpha Platform Gantry -->
+  <text x="50" y="100" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
+  <text x="50" y="115" class="text-base">===============================================================================</text>
+
+  <!-- Identity Headers -->
+  <text x="120" y="145" class="text-base text-jedi">JEDI: SHARVIN</text>
+  <text x="550" y="145" class="text-base text-vader">DARTH VADER</text>
+
+  <!-- Health Bars -->
+  <text x="70" y="170" class="text-base">HP [<tspan fill="#a855f7">███████████████</tspan><tspan fill="#334155">░░░</tspan>] 82%</text>
+  <text x="480" y="170" class="text-base">HP [<tspan fill="#f43f5e">██████████</tspan><tspan fill="#334155">░░░░░░░</tspan>] 60%</text>
+
+  <!-- Jedi Character Art -->
+  <g>
+    <text x="245" y="210" class="text-base text-highlight">\O/</text>
+    <text x="245" y="225" class="text-base text-highlight"> | </text>
+    <text x="245" y="240" class="text-base text-highlight">/ \</text>
+  </g>
+
+  <!-- Darth Vader Character Art -->
+  <g>
+    <text x="535" y="210" class="text-base text-highlight"> M </text>
+    <text x="535" y="225" class="text-base text-highlight">/|\</text>
+    <text x="535" y="240" class="text-base text-highlight">/ \</text>
+  </g>
+
+  <!-- Lightsaber Labels -->
+  <text x="160" y="265" class="text-base jedi-label">[KYBER PURPLE]</text>
+  <text x="510" y="265" class="text-base vader-label">[SITH CRIMSON]</text>
+
+  <!-- Animated Lightsaber Blades -->
+  <!-- Jedi Saber (Purple/Magenta) -->
+  <line x1="260" y1="215" x2="395" y2="255" stroke="#d8b4fe" stroke-width="4" stroke-linecap="round" class="jedi-saber" />
+  <!-- Vader Saber (Crimson Red) -->
+  <line x1="535" y1="215" x2="395" y2="255" stroke="#fecdd3" stroke-width="4" stroke-linecap="round" class="vader-saber" />
+
+  <!-- Animated Clash Sparks and Explosion -->
+  <g class="clash-center" filter="url(#spark-glow)">
+    <circle cx="395" cy="255" r="16" fill="#fef08a" opacity="0.6" />
+    <circle cx="395" cy="255" r="8" fill="#ffffff" />
+    <line x1="395" y1="255" x2="375" y2="235" stroke="#fbbf24" stroke-width="2.5" />
+    <line x1="395" y1="255" x2="415" y2="235" stroke="#fbbf24" stroke-width="2.5" />
+    <line x1="395" y1="255" x2="370" y2="270" stroke="#f59e0b" stroke-width="2" />
+    <line x1="395" y1="255" x2="420" y2="270" stroke="#f59e0b" stroke-width="2" />
+    <text x="375" y="295" class="text-base text-status" font-weight="bold">💥 CLASH!</text>
+  </g>
+
+  <!-- Bottom Platform Divider -->
+  <text x="50" y="300" class="text-base">===============================================================================</text>
+  <text x="50" y="315" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
+
+  <!-- Cheering Troopers (Omega) -->
+  <g class="troopers-omega">
+    <text x="65" y="335" class="text-base text-trooper">\o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/</text>
+  </g>
+
+  <!-- Bottom Platform - Omega -->
+  <text x="50" y="355" class="text-base">[ OBSERVATION PLATFORM OMEGA ] - 2ND BATTALION CLONE SOLDIERS</text>
+
+  <!-- Status Divider Line -->
+  <path d="M 5 385 L 795 385" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Status Telemetry Readout -->
+  <text x="20" y="402" class="text-base text-status">> STATUS: ACTIVE ENGAGEMENT. KYBER FORCE RESONANCE DETECTED. OVERLOAD: 87.4%</text>
+</svg>

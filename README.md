@@ -1,7 +1,7 @@
 # 🌌 AXIOM // THE KYBER COLLECTIVE
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&duration=3000&pause=1000&color=f43f5e&center=true&vCenter=true&width=600&lines=AXIOM+%3A%3A+THE+KYBER+COLLECTIVE;OPERATIONAL+TACTICAL+LOG%3A+SHARVIN+MHATRE;INTELLIGENCE+GRID+INITIALIZED" alt="Typing Title" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=22&duration=3000&pause=1000&color=f43f5e&center=true&vCenter=true&width=850&lines=AXIOM+%3A%3A+THE+KYBER+COLLECTIVE;OPERATIONAL+TACTICAL+LOG%3A+SHARVIN+MHATRE;INTELLIGENCE+GRID+INITIALIZED" alt="Typing Title" />
 </div>
 
 ---
@@ -27,48 +27,9 @@
 
 ## ⚔️ COMBAT ENGAGEMENT SIMULATOR
 
-```text
-+-----------------------------------------------------------------------------------+
-| [SHIELDS: ONLINE]           [OPERATIONAL LOG: SITH_VS_JEDI]          [FORCE: 99%] |
-+-----------------------------------------------------------------------------------+
-|                                                                                   |
-|  [ OBSERVATION PLATFORM ALPHA ] - 1ST BATTALION CLONE SOLDIERS                    |
-|   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/     |
-|  [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]    |
-|  ===============================================================================  |
-|                                                                                   |
-|         JEDI: SHARVIN                                    DARTH VADER              |
-|         HP [███████████████░░░] 82%                      HP [██████████░░░░░░░] 60%|
-|                                                                                   |
-|                 \O/                                          M                    |
-|                  |                                          /|\                   |
-|                 / \                                         / \                   |
-|                  \   *==============*     *==============*  /                     |
-|                   \   [KYBER PURPLE]       [SITH CRIMSON]  /                      |
-|                    \  *==============*     *==============* /                       |
-|                     \            \             /           /                        |
-|                      \            \           /           /                         |
-|                       \            \         /           /                          |
-|                        \            \       /           /                           |
-|                         \            \     /           /                            |
-|                          \            \   /           /                             |
-|                           \            \ /           /                              |
-|                            \            X           /                               |
-|                             \          / \         /                                |
-|                              \        /   \        /                                |
-|                               \      /     \      /                                 |
-|                                \    /       \    /                                  |
-|                                           💥 (CLASH!)                             |
-|                                                                                   |
-|  ===============================================================================  |
-|  [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]    |
-|   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/     |
-|  [ OBSERVATION PLATFORM OMEGA ] - 2ND BATTALION CLONE SOLDIERS                    |
-|                                                                                   |
-+-----------------------------------------------------------------------------------+
-| STATUS: LIGHTSABER COLLISION DETECTED. KYBER RESONANCE OVERLOAD: 87.4%           |
-+-----------------------------------------------------------------------------------+
-```
+<div align="center">
+  <img src="./combat_sim.svg" alt="Combat Engagement Simulator" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/combat_sim.svg'" />
+</div>
 
 ---
 
@@ -152,7 +113,7 @@
 ## 📊 3D CONTRIBUTION KINETICS
 
 <div align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="95%" onerror="this.src='https://raw.githubusercontent.com/sharvmhatre/sharvmhatre/main/profile-3d-contrib/profile-night-view.svg'" />
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="95%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-3d-contrib/profile-night-view.svg'" />
 </div>
 
 ---
@@ -162,18 +123,18 @@
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="./profile-summary-card-output/dracula/0-profile-details.svg" alt="Profile Details Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/sharvmhatre/sharvmhatre/main/profile-summary-card-output/dracula/0-profile-details.svg'" />
+      <img src="./profile-summary-card-output/dracula/0-profile-details.svg" alt="Profile Details Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-summary-card-output/dracula/0-profile-details.svg'" />
     </td>
     <td width="50%" align="center">
-      <img src="./profile-summary-card-output/dracula/3-stats.svg" alt="Repository Stats Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/sharvmhatre/sharvmhatre/main/profile-summary-card-output/dracula/3-stats.svg'" />
+      <img src="./profile-summary-card-output/dracula/3-stats.svg" alt="Repository Stats Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-summary-card-output/dracula/3-stats.svg'" />
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="./profile-summary-card-output/dracula/1-repos-per-language.svg" alt="Languages Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/sharvmhatre/sharvmhatre/main/profile-summary-card-output/dracula/1-repos-per-language.svg'" />
+      <img src="./profile-summary-card-output/dracula/1-repos-per-language.svg" alt="Languages Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-summary-card-output/dracula/1-repos-per-language.svg'" />
     </td>
     <td width="50%" align="center">
-      <img src="./profile-summary-card-output/dracula/2-most-commit-language.svg" alt="Commit Activity Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/sharvmhatre/sharvmhatre/main/profile-summary-card-output/dracula/2-most-commit-language.svg'" />
+      <img src="./profile-summary-card-output/dracula/2-most-commit-language.svg" alt="Commit Activity Card" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-summary-card-output/dracula/2-most-commit-language.svg'" />
     </td>
   </tr>
 </table>
@@ -183,8 +144,8 @@
 ## ⚡ DYNAMIC GALACTIC METRICS (STAR WARS CUSTOM UI MATRIX)
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sharvmhatre&show_icons=true&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's GitHub Stats" width="48%" />&nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sharvmhatre&background=03030c&fire=f43f5e&ring=00d2ff&stroke=00d2ff&currStreakNum=00d2ff&currStreakLabel=f43f5e&sideNums=e2e8f0&sideLabels=e2e8f0&dates=94a3b8" alt="Sharvin's GitHub Streak" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=LuxShar007&show_icons=true&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's GitHub Stats" width="48%" />&nbsp;
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=LuxShar007&background=03030c&fire=f43f5e&ring=00d2ff&stroke=00d2ff&currStreakNum=00d2ff&currStreakLabel=f43f5e&sideNums=e2e8f0&sideLabels=e2e8f0&dates=94a3b8" alt="Sharvin's GitHub Streak" width="48%" />
   <br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharvmhatre&layout=compact&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's Top Languages" width="60%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuxShar007&layout=compact&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's Top Languages" width="60%" />
 </div>
