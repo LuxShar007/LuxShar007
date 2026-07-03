@@ -225,7 +225,6 @@
   </g>
 
   <!-- Typography overlay (SF Pro typography style) -->
-  <text x="400" y="74" class="text-name" text-anchor="middle">Sharvin Sameer Mhatre</text>
-  <text x="400" y="106" class="text-tagline" text-anchor="middle">Electronics &amp; Computer Science Engineer</text>
-  <text x="400" y="132" class="text-details" text-anchor="middle">Founder of Axiom: The Kyber Collective</text>
+  <text x="400" y="85" class="text-name" text-anchor="middle">Sharvin Sameer Mhatre</text>
+  <text x="400" y="118" class="text-tagline" text-anchor="middle">Electronics &amp; Computer Science Engineer</text>
 </svg>
