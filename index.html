@@ -232,6 +232,85 @@
       </div>
     </div>
 
+    <!-- Live Status Diagnostics Matrix -->
+    <div class="glass-card">
+      <h2 class="section-title">📊 LIVE LOGIC SYSTEM PROCESSOR (DYNAMIC HUD)</h2>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 25px;">
+        Real-time system diagnostics tracking language memory bounds, active GPU thread allocation buffers, and CPU cycles.
+      </p>
+      
+      <div class="grid-2col">
+        <!-- Left Side: Interactive Progress Bars -->
+        <div class="svg-embed-container" style="flex-direction: column; align-items: flex-start; gap: 15px; padding: 25px;">
+          <h3 class="card-subtitle" style="color: var(--purple-accent); margin-bottom: 5px;">💾 LANGUAGE ALLOCATION BUFFERS</h3>
+          
+          <div style="width: 100%; font-family: monospace; font-size: 0.8rem; color: #cbd5e1;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <span>🐍 PYTHON MEMORY:</span>
+              <span id="stat-python-val">0%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 10px; border-radius: 5px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+              <div id="stat-python-bar" style="width: 0%; background: linear-gradient(90deg, #3776ab, #5a9fd4); height: 100%; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+            </div>
+          </div>
+          
+          <div style="width: 100%; font-family: monospace; font-size: 0.8rem; color: #cbd5e1;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <span>💻 C++ VECTOR ARRAY:</span>
+              <span id="stat-cpp-val">0%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 10px; border-radius: 5px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+              <div id="stat-cpp-bar" style="width: 0%; background: linear-gradient(90deg, #00599c, #007cc7); height: 100%; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+            </div>
+          </div>
+
+          <div style="width: 100%; font-family: monospace; font-size: 0.8rem; color: #cbd5e1;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <span>⚡ CUDA GPU THREADS:</span>
+              <span id="stat-cuda-val">0%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 10px; border-radius: 5px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+              <div id="stat-cuda-bar" style="width: 0%; background: linear-gradient(90deg, var(--purple-accent), var(--magenta-accent)); height: 100%; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+            </div>
+          </div>
+
+          <div style="width: 100%; font-family: monospace; font-size: 0.8rem; color: #cbd5e1;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+              <span>🌐 WEB JS/TS STACK:</span>
+              <span id="stat-js-val">0%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 10px; border-radius: 5px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+              <div id="stat-js-bar" style="width: 0%; background: linear-gradient(90deg, #fbbf24, #f59e0b); height: 100%; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Side: Scrolling Diagnostic Clock Speeds -->
+        <div class="svg-embed-container" style="flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 25px; font-family: monospace; font-size: 0.8rem; background: rgba(3, 3, 12, 0.6); height: 260px;">
+          <h3 class="card-subtitle" style="color: var(--cyan-accent); margin-bottom: 12px;">📈 CORE TELEMETRY MONITORS</h3>
+          <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 6px;">
+              <span>💾 TOTAL GIT COMMITS:</span>
+              <span id="total-commits-counter" style="color: var(--cyan-accent); font-weight: bold;">0</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 6px;">
+              <span>⭐ REPOSITORY STARS:</span>
+              <span id="total-stars-counter" style="color: #fbbf24; font-weight: bold;">0</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 6px;">
+              <span>📡 NETWORK GATEWAY SPEED:</span>
+              <span id="gateway-speed-val" style="color: var(--magenta-accent); font-weight: bold;">2.44 GHz</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; border-bottom: 1px dashed rgba(255,255,255,0.05); padding-bottom: 6px;">
+              <span>🛰️ MATRIX PACKET LOSS:</span>
+              <span id="packet-loss-val" style="color: #10b981; font-weight: bold;">0.00%</span>
+            </div>
+          </div>
+          <button id="refresh-telemetry-btn" class="btn-link" style="margin-top: 15px; width: 100%; border-radius: 8px; justify-content: center; font-size: 0.75rem;">🔄 COMPUTE DIAGNOSTICS RESET</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Section: Galactic Metrics -->
     <div class="glass-card">
       <h2 class="section-title">⚡ DYNAMIC GALACTIC METRICS (STAR WARS CUSTOM UI MATRIX)</h2>

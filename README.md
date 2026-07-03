@@ -3,6 +3,16 @@
   <img src="./profile_header.svg" alt="Sharvin Sameer Mhatre Header" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile_header.svg'" />
 </div>
 
+<br/>
+
+<div align="center">
+  <a href="https://luxshar007.github.io/LuxShar007/" target="_blank">
+    <img src="https://img.shields.io/badge/%F0%9F%8C%8C_LAUNCH_INTERACTIVE_HUD_DASHBOARD-CLICK_HERE-a855f7?style=for-the-badge" alt="Launch Interactive Portfolio" />
+  </a>
+</div>
+
+<br/>
+
 <img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 📡 COMMUNICATIONS MATRIX ARRAY

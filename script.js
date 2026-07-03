@@ -648,4 +648,86 @@ if (humCanvas) {
   drawHumWave();
 }
 
+// ==================== LIVE DIAGNOSTIC HUD SYSTEM ====================
+const pyBar = document.getElementById('stat-python-bar');
+const pyVal = document.getElementById('stat-python-val');
+const cppBar = document.getElementById('stat-cpp-bar');
+const cppVal = document.getElementById('stat-cpp-val');
+const cudaBar = document.getElementById('stat-cuda-bar');
+const cudaVal = document.getElementById('stat-cuda-val');
+const jsBar = document.getElementById('stat-js-bar');
+const jsVal = document.getElementById('stat-js-val');
+
+const commitsCounter = document.getElementById('total-commits-counter');
+const starsCounter = document.getElementById('total-stars-counter');
+const speedMonitor = document.getElementById('gateway-speed-val');
+const lossMonitor = document.getElementById('packet-loss-val');
+const refreshTelemetryBtn = document.getElementById('refresh-telemetry-btn');
+
+function animateHUD() {
+  // Set progress bar widths after a tiny delay for CSS transitions to kick in
+  setTimeout(() => {
+    if (pyBar) { pyBar.style.width = '78%'; pyVal.textContent = '78%'; }
+    if (cppBar) { cppBar.style.width = '64%'; cppVal.textContent = '64%'; }
+    if (cudaBar) { cudaBar.style.width = '82%'; cudaVal.textContent = '82%'; }
+    if (jsBar) { jsBar.style.width = '88%'; jsVal.textContent = '88%'; }
+  }, 150);
+
+  // Count up Git commits (0 -> 197)
+  let commitCount = 0;
+  const commitInterval = setInterval(() => {
+    if (!commitsCounter) return clearInterval(commitInterval);
+    commitCount += 4;
+    if (commitCount >= 197) {
+      commitCount = 197;
+      clearInterval(commitInterval);
+    }
+    commitsCounter.textContent = commitCount;
+  }, 25);
+
+  // Count up Repos stars (0 -> 6)
+  let starsCount = 0;
+  const starsInterval = setInterval(() => {
+    if (!starsCounter) return clearInterval(starsInterval);
+    starsCount += 1;
+    if (starsCount >= 6) {
+      starsCount = 6;
+      clearInterval(starsInterval);
+    }
+    starsCounter.textContent = starsCount;
+  }, 150);
+}
+
+// Fluctuating live diagnostic clock loops
+setInterval(() => {
+  if (speedMonitor) {
+    const val = (2.4 + Math.random() * 0.4).toFixed(2);
+    speedMonitor.textContent = `${val} GHz`;
+  }
+  if (lossMonitor) {
+    const isLoss = Math.random() > 0.88;
+    lossMonitor.textContent = isLoss ? '0.01%' : '0.00%';
+    lossMonitor.style.color = isLoss ? '#f43f5e' : '#10b981';
+  }
+}, 1000);
+
+if (refreshTelemetryBtn) {
+  refreshTelemetryBtn.addEventListener('click', () => {
+    // Reset
+    if (pyBar) { pyBar.style.width = '0%'; pyVal.textContent = '0%'; }
+    if (cppBar) { cppBar.style.width = '0%'; cppVal.textContent = '0%'; }
+    if (cudaBar) { cudaBar.style.width = '0%'; cudaVal.textContent = '0%'; }
+    if (jsBar) { jsBar.style.width = '0%'; jsVal.textContent = '0%'; }
+    if (commitsCounter) commitsCounter.textContent = '0';
+    if (starsCounter) starsCounter.textContent = '0';
+    
+    // Re-run animation
+    animateHUD();
+  });
+}
+
+// Run HUD loading animation on startup
+animateHUD();
+
+
 
