@@ -343,4 +343,29 @@ ul.telemetry-list li:hover {
   box-shadow: 0 15px 35px rgba(244, 63, 94, 0.15) !important;
 }
 
+/* CUDA Thread Grid Cells styling */
+.cuda-cell {
+  width: 100%;
+  padding-bottom: 100%;
+  background-color: #1e293b;
+  border-radius: 2px;
+  transition: background-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.cuda-cell.active {
+  background-color: var(--purple-accent);
+  box-shadow: 0 0 6px var(--purple-accent);
+}
+
+.cuda-cell.sync {
+  background-color: var(--cyan-accent);
+  box-shadow: 0 0 6px var(--cyan-accent);
+}
+
+.cuda-cell.done {
+  background-color: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+
 

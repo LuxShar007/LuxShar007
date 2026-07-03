@@ -48,6 +48,44 @@
       <div class="svg-embed-container">
         <object data="./combat_sim.svg" type="image/svg+xml" style="width:100%; height:auto;"></object>
       </div>
+      
+      <!-- Interactive Lightsaber Minigame Console -->
+      <div style="margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+        <div class="grid-2col" style="margin-bottom: 20px;">
+          <!-- Health Bars -->
+          <div style="font-family: monospace; font-size: 0.9rem; display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--purple-accent); font-weight: bold;">💜 SHARVIN HP:</span>
+              <span id="player-hp-val">100%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 12px; border-radius: 6px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+              <div id="player-hp-bar" style="width: 100%; background: linear-gradient(90deg, #a855f7, #c084fc); height: 100%; transition: width 0.3s ease;"></div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+              <span style="color: var(--magenta-accent); font-weight: bold;">❤️ DARTH VADER HP:</span>
+              <span id="vader-hp-val">100%</span>
+            </div>
+            <div style="width: 100%; background: #1e293b; height: 12px; border-radius: 6px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+              <div id="vader-hp-bar" style="width: 100%; background: linear-gradient(90deg, #f43f5e, #fda4af); height: 100%; transition: width 0.3s ease;"></div>
+            </div>
+          </div>
+          
+          <!-- Battle Logs -->
+          <div style="background: rgba(3, 3, 12, 0.6); border: 1px solid var(--card-border); border-radius: 10px; padding: 15px; font-family: monospace; font-size: 0.75rem; height: 105px; overflow-y: auto;">
+            <div id="battle-log" style="display: flex; flex-direction: column; gap: 5px;">
+              <div style="color: #64748b;">// Combat matrix ready. Awaiting strike command...</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Controls Buttons -->
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+          <button id="btn-strike" class="btn-link" style="border-radius: 8px;">🔥 LIGHTSABER STRIKE</button>
+          <button id="btn-deflect" class="btn-link" style="border-radius: 8px; background: rgba(0, 210, 255, 0.1); border-color: rgba(0, 210, 255, 0.3);">🛡️ FORCE DEFLECT</button>
+          <button id="btn-focus" class="btn-link" style="border-radius: 8px; background: rgba(168, 85, 247, 0.1); border-color: rgba(168, 85, 247, 0.3);">✨ FORCE FOCUS (HEAL)</button>
+        </div>
+      </div>
     </div>
 
     <!-- Section: Telemetry Grid & Campaign logs -->
@@ -121,6 +159,33 @@
       </div>
     </div>
 
+    <!-- Section: CUDA Grid thread scheduler -->
+    <div class="glass-card">
+      <h2 class="section-title">🖥️ CUDA COMPUTE KERNEL RUNTIME HUD</h2>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">
+        Simulate parallel thread execution on virtual SM (Streaming Multiprocessor) blocks. Launches GPU blocks, hits thread barriers, and logs memory transfers.
+      </p>
+      
+      <div class="grid-2col">
+        <!-- Thread Grid Box -->
+        <div class="svg-embed-container" style="display: flex; flex-direction: column; gap: 15px; padding: 25px;">
+          <h3 class="card-subtitle" style="color: var(--cyan-accent); margin-bottom: 0; align-self: flex-start;">⚡ THREAD MATRIX BLOCK (16x16)</h3>
+          <div id="cuda-thread-grid" style="display: grid; grid-template-columns: repeat(16, 1fr); gap: 4px; width: 100%; max-width: 240px; margin: 0 auto;">
+            <!-- Generated via JS -->
+          </div>
+          <button id="cuda-launch-btn" class="btn-link" style="margin-top: 15px; border-radius: 8px; width: 100%; justify-content: center;">⚡ LAUNCH CUDA KERNEL</button>
+        </div>
+        
+        <!-- CUDA Terminal Console Log -->
+        <div class="svg-embed-container" style="flex-direction: column; align-items: flex-start; justify-content: flex-start; padding: 20px; font-family: monospace; font-size: 0.8rem; background: rgba(3, 3, 12, 0.6); overflow-y: auto; height: 320px;">
+          <h3 class="card-subtitle" style="color: var(--magenta-accent); margin-bottom: 10px;">💾 RUNTIME COMPILER TELEMETRY</h3>
+          <div id="cuda-console-output" style="color: #cbd5e1; width: 100%; display: flex; flex-direction: column; gap: 6px;">
+            <div style="color: #64748b;">// System idle. Awaiting instruction block...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Section: Operations & Projects -->
     <div class="glass-card">
       <h2 class="section-title">⚡ CORE OPERATIONS &amp; PROJECTS</h2>
@@ -183,6 +248,12 @@
           <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=LuxShar007&layout=compact&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Top Languages" />
         </div>
       </div>
+    </div>
+
+    <!-- Interactive Web Audio Hum Visualizer -->
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 30px; margin-bottom: 20px;">
+      <button id="btn-hum" class="control-btn" style="border-radius: 12px; min-width: 250px;">🔊 INITIALIZE KYBER HUM MATRIX</button>
+      <canvas id="hum-canvas" width="400" height="60" style="width: 100%; max-width: 400px; height: 60px; background: rgba(3,3,12,0.3); border-radius: 8px; border: 1px solid rgba(255,255,255,0.03);"></canvas>
     </div>
 
     <div class="footer-bar">
