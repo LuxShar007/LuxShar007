@@ -278,3 +278,69 @@ ul.telemetry-list li:hover {
   filter: drop-shadow(0 0 6px var(--purple-accent));
 }
 
+/* Control Panel and Buttons */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.control-btn {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.control-btn:hover {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: var(--purple-accent);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.15);
+}
+
+/* Color Coded Quadrants for Telemetry */
+.quadrant-trajectory {
+  border-color: rgba(168, 85, 247, 0.15);
+}
+.quadrant-trajectory:hover {
+  border-color: var(--purple-accent) !important;
+  box-shadow: 0 15px 35px rgba(168, 85, 247, 0.15) !important;
+}
+
+.quadrant-hardware {
+  border-color: rgba(0, 210, 255, 0.15);
+}
+.quadrant-hardware:hover {
+  border-color: var(--cyan-accent) !important;
+  box-shadow: 0 15px 35px rgba(0, 210, 255, 0.15) !important;
+}
+
+.quadrant-victories {
+  border-color: rgba(251, 191, 36, 0.15);
+}
+.quadrant-victories:hover {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 15px 35px rgba(251, 191, 36, 0.15) !important;
+}
+
+.quadrant-software {
+  border-color: rgba(244, 63, 94, 0.15);
+}
+.quadrant-software:hover {
+  border-color: var(--magenta-accent) !important;
+  box-shadow: 0 15px 35px rgba(244, 63, 94, 0.15) !important;
+}
+
+
