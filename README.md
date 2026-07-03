@@ -125,6 +125,12 @@
   </tr>
 </table>
 
+<div align="center">
+  <br/>
+  <strong>📈 KINETIC ACTIVITY TIMELINE (31-DAY ROLLING CORE)</strong><br/><br/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=LuxShar007&bg_color=03030c&color=f43f5e&line=a855f7&point=00d2ff&area=true&hide_border=true" alt="LuxShar007's Contribution Activity Graph" width="95%" />
+</div>
+
 ---
 
 ## 📈 SYSTEM STATUS CARDS (DRACULA OPERATIONAL MATRIX)
