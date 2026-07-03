@@ -26,6 +26,140 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <!-- Pixel Art Stormtrooper Sprite -->
+    <g id="trooper">
+      <!-- Frame 1: Cheering, Arms Down -->
+      <g class="t-frame1">
+        <rect x="6" y="0" width="12" height="3" fill="#f8fafc" />
+        <rect x="3" y="3" width="18" height="3" fill="#f8fafc" />
+        <rect x="0" y="6" width="6" height="3" fill="#f8fafc" />
+        <rect x="6" y="6" width="3" height="3" fill="#0f172a" />
+        <rect x="9" y="6" width="6" height="3" fill="#f8fafc" />
+        <rect x="15" y="6" width="3" height="3" fill="#0f172a" />
+        <rect x="18" y="6" width="6" height="3" fill="#f8fafc" />
+        <rect x="0" y="9" width="9" height="3" fill="#f8fafc" />
+        <rect x="9" y="9" width="6" height="3" fill="#0f172a" />
+        <rect x="15" y="9" width="9" height="3" fill="#f8fafc" />
+        <rect x="3" y="12" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="15" width="3" height="3" fill="#f8fafc" />
+        <rect x="6" y="15" width="12" height="3" fill="#0f172a" />
+        <rect x="18" y="15" width="3" height="3" fill="#f8fafc" />
+        <rect x="3" y="18" width="18" height="3" fill="#f8fafc" />
+        <rect x="0" y="21" width="6" height="3" fill="#f8fafc" />
+        <rect x="6" y="21" width="12" height="3" fill="#64748b" />
+        <rect x="18" y="21" width="6" height="3" fill="#f8fafc" />
+        <rect x="0" y="24" width="24" height="3" fill="#f8fafc" />
+        <rect x="3" y="27" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="30" width="18" height="3" fill="#0f172a" />
+        <rect x="3" y="33" width="6" height="3" fill="#f8fafc" />
+        <rect x="15" y="33" width="6" height="3" fill="#f8fafc" />
+        <rect x="3" y="36" width="6" height="3" fill="#0f172a" />
+        <rect x="15" y="36" width="6" height="3" fill="#0f172a" />
+      </g>
+      <!-- Frame 2: Cheering, Arms Up -->
+      <g class="t-frame2">
+        <rect x="0" y="0" width="3" height="3" fill="#f8fafc" />
+        <rect x="6" y="0" width="12" height="3" fill="#f8fafc" />
+        <rect x="21" y="0" width="3" height="3" fill="#f8fafc" />
+        <rect x="0" y="3" width="24" height="3" fill="#f8fafc" />
+        <rect x="3" y="6" width="3" height="3" fill="#f8fafc" />
+        <rect x="6" y="6" width="3" height="3" fill="#0f172a" />
+        <rect x="9" y="6" width="6" height="3" fill="#f8fafc" />
+        <rect x="15" y="6" width="3" height="3" fill="#0f172a" />
+        <rect x="18" y="6" width="3" height="3" fill="#f8fafc" />
+        <rect x="3" y="9" width="6" height="3" fill="#f8fafc" />
+        <rect x="9" y="9" width="6" height="3" fill="#0f172a" />
+        <rect x="15" y="9" width="6" height="3" fill="#f8fafc" />
+        <rect x="3" y="12" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="15" width="3" height="3" fill="#f8fafc" />
+        <rect x="6" y="15" width="12" height="3" fill="#0f172a" />
+        <rect x="18" y="15" width="3" height="3" fill="#f8fafc" />
+        <rect x="3" y="18" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="21" width="18" height="3" fill="#64748b" />
+        <rect x="3" y="24" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="27" width="18" height="3" fill="#f8fafc" />
+        <rect x="3" y="30" width="18" height="3" fill="#0f172a" />
+        <rect x="3" y="33" width="6" height="3" fill="#f8fafc" />
+        <rect x="15" y="33" width="6" height="3" fill="#f8fafc" />
+        <rect x="3" y="36" width="6" height="3" fill="#0f172a" />
+        <rect x="15" y="36" width="6" height="3" fill="#0f172a" />
+      </g>
+    </g>
+
+    <!-- Pixel Art Jedi Sharvin Sprite -->
+    <g id="jedi">
+      <rect x="16" y="0" width="16" height="4" fill="#854d0e" />
+      <rect x="12" y="4" width="24" height="4" fill="#854d0e" />
+      <rect x="12" y="8" width="4" height="4" fill="#854d0e" />
+      <rect x="16" y="8" width="16" height="4" fill="#fcd34d" />
+      <rect x="32" y="8" width="4" height="4" fill="#854d0e" />
+      <rect x="12" y="12" width="4" height="4" fill="#854d0e" />
+      <rect x="16" y="12" width="4" height="4" fill="#fcd34d" />
+      <rect x="20" y="12" width="8" height="4" fill="#1e293b" />
+      <rect x="28" y="12" width="4" height="4" fill="#fcd34d" />
+      <rect x="32" y="12" width="4" height="4" fill="#854d0e" />
+      <rect x="16" y="16" width="16" height="4" fill="#fcd34d" />
+      <rect x="12" y="20" width="4" height="4" fill="#854d0e" />
+      <rect x="16" y="20" width="16" height="4" fill="#a855f7" />
+      <rect x="32" y="20" width="4" height="4" fill="#854d0e" />
+      <rect x="8" y="24" width="12" height="4" fill="#854d0e" />
+      <rect x="20" y="24" width="8" height="4" fill="#a855f7" />
+      <rect x="28" y="24" width="12" height="4" fill="#854d0e" />
+      <rect x="4" y="28" width="16" height="4" fill="#854d0e" />
+      <rect x="20" y="28" width="8" height="4" fill="#a16207" />
+      <rect x="28" y="28" width="16" height="4" fill="#854d0e" />
+      <rect x="4" y="32" width="12" height="4" fill="#854d0e" />
+      <rect x="16" y="32" width="16" height="4" fill="#a16207" />
+      <rect x="32" y="32" width="12" height="4" fill="#854d0e" />
+      <rect x="4" y="36" width="8" height="4" fill="#854d0e" />
+      <rect x="12" y="36" width="24" height="4" fill="#a16207" />
+      <rect x="36" y="36" width="8" height="4" fill="#854d0e" />
+      <rect x="8" y="40" width="32" height="4" fill="#a16207" />
+      <rect x="8" y="44" width="12" height="4" fill="#a16207" />
+      <rect x="28" y="44" width="12" height="4" fill="#a16207" />
+      <rect x="8" y="48" width="12" height="4" fill="#1e293b" />
+      <rect x="28" y="48" width="12" height="4" fill="#1e293b" />
+    </g>
+
+    <!-- Pixel Art Darth Vader Sprite -->
+    <g id="vader">
+      <rect x="16" y="0" width="16" height="4" fill="#090d16" />
+      <rect x="12" y="4" width="4" height="4" fill="#090d16" />
+      <rect x="16" y="4" width="16" height="4" fill="#1e293b" />
+      <rect x="32" y="4" width="4" height="4" fill="#090d16" />
+      <rect x="8" y="8" width="4" height="4" fill="#090d16" />
+      <rect x="12" y="8" width="24" height="4" fill="#1e293b" />
+      <rect x="36" y="8" width="4" height="4" fill="#090d16" />
+      <rect x="8" y="12" width="4" height="4" fill="#090d16" />
+      <rect x="12" y="12" width="4" height="4" fill="#1e293b" />
+      <rect x="16" y="12" width="4" height="4" fill="#f43f5e" />
+      <rect x="20" y="12" width="8" height="4" fill="#1e293b" />
+      <rect x="28" y="12" width="4" height="4" fill="#f43f5e" />
+      <rect x="32" y="12" width="4" height="4" fill="#1e293b" />
+      <rect x="36" y="12" width="4" height="4" fill="#090d16" />
+      <rect x="8" y="16" width="4" height="4" fill="#090d16" />
+      <rect x="12" y="16" width="8" height="4" fill="#1e293b" />
+      <rect x="20" y="16" width="8" height="4" fill="#94a3b8" />
+      <rect x="28" y="16" width="8" height="4" fill="#1e293b" />
+      <rect x="36" y="16" width="4" height="4" fill="#090d16" />
+      <rect x="12" y="20" width="4" height="4" fill="#090d16" />
+      <rect x="16" y="20" width="16" height="4" fill="#1e293b" />
+      <rect x="32" y="20" width="4" height="4" fill="#090d16" />
+      <rect x="8" y="24" width="12" height="4" fill="#090d16" />
+      <rect x="20" y="24" width="8" height="4" fill="#94a3b8" />
+      <rect x="28" y="24" width="12" height="4" fill="#090d16" />
+      <rect x="4" y="28" width="40" height="4" fill="#090d16" />
+      <rect x="4" y="32" width="16" height="4" fill="#090d16" />
+      <rect x="20" y="32" width="8" height="4" fill="#94a3b8" />
+      <rect x="28" y="32" width="16" height="4" fill="#090d16" />
+      <rect x="0" y="36" width="48" height="4" fill="#090d16" />
+      <rect x="0" y="40" width="48" height="4" fill="#090d16" />
+      <rect x="4" y="44" width="16" height="4" fill="#090d16" />
+      <rect x="28" y="44" width="16" height="4" fill="#090d16" />
+      <rect x="4" y="48" width="16" height="4" fill="#090d16" />
+      <rect x="28" y="48" width="16" height="4" fill="#090d16" />
+    </g>
   </defs>
 
   <style>
@@ -61,153 +195,188 @@
       fill: #10b981;
       font-weight: bold;
     }
-    .text-trooper {
-      fill: #cbd5e1;
+
+    /* 2-Frame Stormtrooper Animation */
+    .t-frame1 {
+      animation: toggleFrame1 0.8s steps(1) infinite;
+    }
+    .t-frame2 {
+      animation: toggleFrame2 0.8s steps(1) infinite;
+    }
+    @keyframes toggleFrame1 {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes toggleFrame2 {
+      0%, 49% { opacity: 0; }
+      50%, 100% { opacity: 1; }
     }
 
-    /* Troopers Cheering Animation */
+    /* Troopers Platform Cheering Bobbing */
     @keyframes bob-alpha {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-3px); }
+      50% { transform: translateY(-4px); }
     }
     @keyframes bob-omega {
       0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(3px); }
+      50% { transform: translateY(4px); }
     }
     .troopers-alpha {
-      animation: bob-alpha 1.2s ease-in-out infinite;
-      transform-origin: 400px 80px;
+      animation: bob-alpha 0.8s ease-in-out infinite;
+      transform-origin: 400px 75px;
     }
     .troopers-omega {
-      animation: bob-omega 1.5s ease-in-out infinite;
-      transform-origin: 400px 335px;
+      animation: bob-omega 0.8s ease-in-out infinite;
+      transform-origin: 400px 325px;
     }
 
-    /* Lightsaber Clash Vibrations */
-    @keyframes vibrate-jedi-saber {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      33% { transform: translate(-1px, 1px) rotate(-0.5deg); }
-      66% { transform: translate(1px, -1px) rotate(0.5deg); }
+    /* Character Combat Vibrations */
+    @keyframes vibrate-jedi {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-1px, 0.5px); }
+      50% { transform: translate(1px, -0.5px); }
+      75% { transform: translate(-0.5px, -1px); }
     }
-    @keyframes vibrate-vader-saber {
-      0%, 100% { transform: translate(0, 0) rotate(0deg); }
-      33% { transform: translate(1px, -1px) rotate(0.5deg); }
-      66% { transform: translate(-1px, 1px) rotate(-0.5deg); }
+    @keyframes vibrate-vader {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(1px, -0.5px); }
+      50% { transform: translate(-1px, 0.5px); }
+      75% { transform: translate(0.5px, 1px); }
     }
+    .jedi-group {
+      animation: vibrate-jedi 0.15s linear infinite;
+    }
+    .vader-group {
+      animation: vibrate-vader 0.15s linear infinite;
+    }
+
+    /* Lightsaber Vibrations & Glows */
     .jedi-saber {
-      animation: vibrate-jedi-saber 0.12s linear infinite;
-      transform-origin: 275px 220px;
+      animation: vibrate-jedi 0.1s linear infinite;
       filter: url(#purple-glow);
     }
     .vader-saber {
-      animation: vibrate-vader-saber 0.12s linear infinite;
-      transform-origin: 515px 220px;
+      animation: vibrate-vader 0.1s linear infinite;
       filter: url(#red-glow);
     }
 
     /* Clash Sparks Pulsing */
     @keyframes spark-pulse {
       0%, 100% { transform: scale(1); opacity: 0.7; }
-      50% { transform: scale(1.3); opacity: 1; }
+      50% { transform: scale(1.35); opacity: 1; }
     }
     .clash-center {
-      animation: spark-pulse 0.08s linear infinite;
-      transform-origin: 395px 255px;
+      animation: spark-pulse 0.07s linear infinite;
+      transform-origin: 395px 235px;
     }
 
-    /* Glowing Text Label Pulse */
-    @keyframes pulse-purple-text {
+    /* Glowing Labels */
+    @keyframes pulse-purple {
       0%, 100% { fill: #a855f7; opacity: 0.8; }
-      50% { fill: #c084fc; opacity: 1; }
+      50% { fill: #d8b4fe; opacity: 1; }
     }
-    @keyframes pulse-red-text {
+    @keyframes pulse-red {
       0%, 100% { fill: #f43f5e; opacity: 0.8; }
-      50% { fill: #fb7185; opacity: 1; }
+      50% { fill: #fca5a5; opacity: 1; }
     }
     .jedi-label {
-      animation: pulse-purple-text 1s infinite alternate;
+      animation: pulse-purple 1s infinite alternate;
     }
     .vader-label {
-      animation: pulse-red-text 1s infinite alternate;
+      animation: pulse-red 1s infinite alternate;
     }
   </style>
 
   <!-- Terminal Window Background -->
   <rect x="5" y="5" width="790" height="410" rx="8" ry="8" class="terminal-bg" />
 
-  <!-- Terminal Header Line and Buttons -->
+  <!-- Terminal Header Line and Control Buttons -->
   <path d="M 5 32 L 795 32" stroke="#1e293b" stroke-width="2" />
   <circle cx="20" cy="18" r="6" fill="#f43f5e" />
   <circle cx="38" cy="18" r="6" fill="#fbbf24" />
   <circle cx="56" cy="18" r="6" fill="#10b981" />
   <text x="400" y="22" class="text-title" text-anchor="middle">OPERATIONAL MATRIX: SITH_VS_JEDI_MATRIX.SYS</text>
 
-  <!-- Top Platform - Alpha -->
-  <text x="50" y="60" class="text-base">[ OBSERVATION PLATFORM ALPHA ] - 1ST BATTALION CLONE SOLDIERS</text>
+  <!-- Top Platform - Alpha Label -->
+  <text x="50" y="52" class="text-base">[ OBSERVATION PLATFORM ALPHA ] - 1ST BATTALION CLONE SOLDIERS</text>
   
-  <!-- Cheering Troopers (Alpha) -->
+  <!-- Pixel Art Stormtroopers Row (Alpha Deck) -->
   <g class="troopers-alpha">
-    <text x="65" y="80" class="text-base text-trooper">\o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/</text>
+    <use href="#trooper" x="80" y="57" />
+    <use href="#trooper" x="135" y="57" />
+    <use href="#trooper" x="190" y="57" />
+    <use href="#trooper" x="245" y="57" />
+    <use href="#trooper" x="300" y="57" />
+    <use href="#trooper" x="355" y="57" />
+    <use href="#trooper" x="410" y="57" />
+    <use href="#trooper" x="465" y="57" />
+    <use href="#trooper" x="520" y="57" />
+    <use href="#trooper" x="575" y="57" />
+    <use href="#trooper" x="630" y="57" />
+    <use href="#trooper" x="685" y="57" />
   </g>
 
-  <!-- Alpha Platform Gantry -->
-  <text x="50" y="100" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
-  <text x="50" y="115" class="text-base">===============================================================================</text>
+  <!-- Alpha Platform Gantry Structural Lines -->
+  <text x="50" y="102" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
+  <text x="50" y="117" class="text-base">===============================================================================</text>
 
   <!-- Identity Headers -->
   <text x="120" y="145" class="text-base text-jedi">JEDI: SHARVIN</text>
   <text x="550" y="145" class="text-base text-vader">DARTH VADER</text>
 
   <!-- Health Bars -->
-  <text x="70" y="170" class="text-base">HP [<tspan fill="#a855f7">███████████████</tspan><tspan fill="#334155">░░░</tspan>] 82%</text>
-  <text x="480" y="170" class="text-base">HP [<tspan fill="#f43f5e">██████████</tspan><tspan fill="#334155">░░░░░░░</tspan>] 60%</text>
+  <text x="70" y="165" class="text-base">HP [<tspan fill="#a855f7">███████████████</tspan><tspan fill="#334155">░░░</tspan>] 82%</text>
+  <text x="480" y="165" class="text-base">HP [<tspan fill="#f43f5e">██████████</tspan><tspan fill="#334155">░░░░░░░</tspan>] 60%</text>
 
-  <!-- Jedi Character Art -->
-  <g>
-    <text x="245" y="210" class="text-base text-highlight">\O/</text>
-    <text x="245" y="225" class="text-base text-highlight"> | </text>
-    <text x="245" y="240" class="text-base text-highlight">/ \</text>
-  </g>
+  <!-- Jedi Character Pixel Sprite -->
+  <use href="#jedi" x="240" y="178" class="jedi-group" />
 
-  <!-- Darth Vader Character Art -->
-  <g>
-    <text x="535" y="210" class="text-base text-highlight"> M </text>
-    <text x="535" y="225" class="text-base text-highlight">/|\</text>
-    <text x="535" y="240" class="text-base text-highlight">/ \</text>
-  </g>
+  <!-- Darth Vader Character Pixel Sprite -->
+  <use href="#vader" x="510" y="178" class="vader-group" />
 
   <!-- Lightsaber Labels -->
-  <text x="160" y="265" class="text-base jedi-label">[KYBER PURPLE]</text>
-  <text x="510" y="265" class="text-base vader-label">[SITH CRIMSON]</text>
+  <text x="160" y="245" class="text-base jedi-label">[KYBER PURPLE]</text>
+  <text x="510" y="245" class="text-base vader-label">[SITH CRIMSON]</text>
 
   <!-- Animated Lightsaber Blades -->
-  <!-- Jedi Saber (Purple/Magenta) -->
-  <line x1="260" y1="215" x2="395" y2="255" stroke="#d8b4fe" stroke-width="4" stroke-linecap="round" class="jedi-saber" />
+  <!-- Jedi Saber (Purple) -->
+  <line x1="265" y1="210" x2="395" y2="235" stroke="#d8b4fe" stroke-width="4" stroke-linecap="round" class="jedi-saber" />
   <!-- Vader Saber (Crimson Red) -->
-  <line x1="535" y1="215" x2="395" y2="255" stroke="#fecdd3" stroke-width="4" stroke-linecap="round" class="vader-saber" />
+  <line x1="520" y1="210" x2="395" y2="235" stroke="#fecdd3" stroke-width="4" stroke-linecap="round" class="vader-saber" />
 
   <!-- Animated Clash Sparks and Explosion -->
   <g class="clash-center" filter="url(#spark-glow)">
-    <circle cx="395" cy="255" r="16" fill="#fef08a" opacity="0.6" />
-    <circle cx="395" cy="255" r="8" fill="#ffffff" />
-    <line x1="395" y1="255" x2="375" y2="235" stroke="#fbbf24" stroke-width="2.5" />
-    <line x1="395" y1="255" x2="415" y2="235" stroke="#fbbf24" stroke-width="2.5" />
-    <line x1="395" y1="255" x2="370" y2="270" stroke="#f59e0b" stroke-width="2" />
-    <line x1="395" y1="255" x2="420" y2="270" stroke="#f59e0b" stroke-width="2" />
-    <text x="375" y="295" class="text-base text-status" font-weight="bold">💥 CLASH!</text>
+    <circle cx="395" cy="235" r="16" fill="#fef08a" opacity="0.6" />
+    <circle cx="395" cy="235" r="8" fill="#ffffff" />
+    <line x1="395" y1="235" x2="375" y2="215" stroke="#fbbf24" stroke-width="2" />
+    <line x1="395" y1="235" x2="415" y2="215" stroke="#fbbf24" stroke-width="2" />
+    <line x1="395" y1="235" x2="370" y2="250" stroke="#f59e0b" stroke-width="1.5" />
+    <line x1="395" y1="235" x2="420" y2="250" stroke="#f59e0b" stroke-width="1.5" />
+    <text x="370" y="275" class="text-base text-status" font-weight="bold">💥 CLASH!</text>
   </g>
 
   <!-- Bottom Platform Divider -->
-  <text x="50" y="300" class="text-base">===============================================================================</text>
-  <text x="50" y="315" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
+  <text x="50" y="295" class="text-base">===============================================================================</text>
+  <text x="50" y="310" class="text-base">[===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===] [===]</text>
 
-  <!-- Cheering Troopers (Omega) -->
+  <!-- Pixel Art Stormtroopers Row (Omega Deck) -->
   <g class="troopers-omega">
-    <text x="65" y="335" class="text-base text-trooper">\o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/   \o/</text>
+    <use href="#trooper" x="80" y="315" />
+    <use href="#trooper" x="135" y="315" />
+    <use href="#trooper" x="190" y="315" />
+    <use href="#trooper" x="245" y="315" />
+    <use href="#trooper" x="300" y="315" />
+    <use href="#trooper" x="355" y="315" />
+    <use href="#trooper" x="410" y="315" />
+    <use href="#trooper" x="465" y="315" />
+    <use href="#trooper" x="520" y="315" />
+    <use href="#trooper" x="575" y="315" />
+    <use href="#trooper" x="630" y="315" />
+    <use href="#trooper" x="685" y="315" />
   </g>
 
-  <!-- Bottom Platform - Omega -->
-  <text x="50" y="355" class="text-base">[ OBSERVATION PLATFORM OMEGA ] - 2ND BATTALION CLONE SOLDIERS</text>
+  <!-- Bottom Platform - Omega Label -->
+  <text x="50" y="368" class="text-base">[ OBSERVATION PLATFORM OMEGA ] - 2ND BATTALION CLONE SOLDIERS</text>
 
   <!-- Status Divider Line -->
   <path d="M 5 385 L 795 385" stroke="#1e293b" stroke-width="2" />
