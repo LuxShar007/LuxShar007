@@ -250,7 +250,7 @@
       animation: vibrate-vader 0.15s linear infinite;
     }
 
-    /* Lightsaber Vibrations & Glows */
+    /* Lightsaber Vibrations and Glows */
     .jedi-saber {
       animation: vibrate-jedi 0.1s linear infinite;
       filter: url(#purple-glow);
