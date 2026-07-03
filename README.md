@@ -1,4 +1,3 @@
-# 🌌 AXIOM // THE KYBER COLLECTIVE
 
 <div align="center">
   <img src="./profile_header.svg" alt="Sharvin Sameer Mhatre Header" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile_header.svg'" />
