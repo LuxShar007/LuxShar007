@@ -3,7 +3,7 @@
   <img src="./profile_header.svg" alt="Sharvin Sameer Mhatre Header" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile_header.svg'" />
 </div>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 📡 COMMUNICATIONS MATRIX ARRAY
 
@@ -22,7 +22,7 @@
   </a>
 </div>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## ⚔️ COMBAT ENGAGEMENT SIMULATOR
 
@@ -30,7 +30,7 @@
   <img src="./combat_sim.svg" alt="Combat Engagement Simulator" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/combat_sim.svg'" />
 </div>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 🗃️ TELEMETRY GRID & CAMPAIGN LOGS
 
@@ -93,21 +93,21 @@
   </tr>
 </table>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## ⚡ CORE OPERATIONS & PROJECTS
 
 *   **SafariSync:** Autonomous Wildlife Management node array leveraging distributed multi-agent system nodes.
 *   **Tactical Fire-Fighting Drone Car Rig:** Custom-engineered autonomous firefighting vehicle rig that has completed over **150 rigorous hardware logic stress tests** to ensure functional reliability in harsh environments.
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 > [!IMPORTANT]
 > ### 🧪 QUANTUM CALIBRATION ARRAY
 > The local operational environment is calibrated according to Heisenberg's Uncertainty Principle:
 > $$\Delta x \cdot \Delta p \ge \frac{\hbar}{2}$$
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 📊 3D CONTRIBUTION KINETICS (ISOMETRIC MATRIX)
 
@@ -130,7 +130,7 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=LuxShar007&bg_color=03030c&color=f43f5e&line=a855f7&point=00d2ff&area=true&hide_border=true" alt="LuxShar007's Contribution Activity Graph" width="95%" />
 </div>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 📈 SYSTEM STATUS CARDS (DRACULA OPERATIONAL MATRIX)
 
@@ -153,7 +153,7 @@
   </tr>
 </table>
 
----
+<img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## ⚡ DYNAMIC GALACTIC METRICS (STAR WARS CUSTOM UI MATRIX)
 
