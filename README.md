@@ -144,8 +144,8 @@
 ## ⚡ DYNAMIC GALACTIC METRICS (STAR WARS CUSTOM UI MATRIX)
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=LuxShar007&show_icons=true&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's GitHub Stats" width="48%" />&nbsp;
+  <img src="https://github-stats-extended.vercel.app/api?username=LuxShar007&show_icons=true&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's GitHub Stats" width="48%" />&nbsp;
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=LuxShar007&background=03030c&fire=f43f5e&ring=00d2ff&stroke=00d2ff&currStreakNum=00d2ff&currStreakLabel=f43f5e&sideNums=e2e8f0&sideLabels=e2e8f0&dates=94a3b8" alt="Sharvin's GitHub Streak" width="48%" />
   <br/><br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuxShar007&layout=compact&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's Top Languages" width="60%" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=LuxShar007&layout=compact&bg_color=03030c&title_color=f43f5e&text_color=e2e8f0&icon_color=00d2ff&border_color=00d2ff" alt="Sharvin's Top Languages" width="60%" />
 </div>
