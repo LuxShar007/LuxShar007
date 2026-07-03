@@ -1,7 +1,7 @@
 # 🌌 AXIOM // THE KYBER COLLECTIVE
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=22&duration=3000&pause=1000&color=f43f5e&center=true&vCenter=true&width=850&lines=AXIOM+%3A%3A+THE+KYBER+COLLECTIVE;OPERATIONAL+TACTICAL+LOG%3A+SHARVIN+MHATRE;INTELLIGENCE+GRID+INITIALIZED" alt="Typing Title" />
+  <img src="./profile_header.svg" alt="Sharvin Sameer Mhatre Header" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile_header.svg'" />
 </div>
 
 ---
