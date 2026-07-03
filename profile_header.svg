@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
   <defs>
-    <!-- Wave Glow Filter -->
-    <filter id="wave-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
+    <!-- Ultra-subtle Glow for Waves -->
+    <filter id="clean-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
 
-    <!-- Gradients -->
-    <linearGradient id="purple-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
+    <!-- Dot Matrix Pattern -->
+    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#334155" opacity="0.35" />
+    </pattern>
+
+    <!-- Glowing Wave Gradients -->
+    <linearGradient id="wave-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.6" />
     </linearGradient>
 
-    <linearGradient id="magenta-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#fda4af" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.7" />
-    </linearGradient>
-
-    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#94a3b8" />
+    <linearGradient id="wave-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#fda4af" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.5" />
     </linearGradient>
   </defs>
 
@@ -33,68 +33,69 @@
       fill: #03030c;
     }
     .text-name {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 32px;
-      font-weight: 800;
-      fill: url(#text-grad);
-      letter-spacing: 4px;
+      font-weight: 700;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
     }
     .text-tagline {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
       fill: #f43f5e;
-      letter-spacing: 2px;
+      letter-spacing: 0.5px;
     }
     .text-details {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 11px;
       font-weight: 400;
       fill: #64748b;
-      letter-spacing: 1px;
+      letter-spacing: 0.5px;
     }
 
-    /* Seamless Loop Wave Animations */
-    .wave-purple {
-      stroke: url(#purple-grad);
+    /* Minimalist Wave Scroll Animations */
+    .wave-1 {
+      stroke: url(#wave-purple);
       fill: none;
-      stroke-width: 3;
-      filter: url(#wave-glow);
-      animation: wave-scroll-right 12s linear infinite;
+      stroke-width: 1.5;
+      filter: url(#clean-glow);
+      animation: scroll-right 12s linear infinite;
     }
-    .wave-magenta {
-      stroke: url(#magenta-grad);
+    .wave-2 {
+      stroke: url(#wave-magenta);
       fill: none;
-      stroke-width: 2;
-      filter: url(#wave-glow);
-      animation: wave-scroll-left 8s linear infinite;
-      opacity: 0.8;
+      stroke-width: 1;
+      filter: url(#clean-glow);
+      animation: scroll-left 8s linear infinite;
     }
 
-    @keyframes wave-scroll-right {
+    @keyframes scroll-right {
       0% { transform: translateX(0); }
       100% { transform: translateX(400px); }
     }
-    @keyframes wave-scroll-left {
+    @keyframes scroll-left {
       0% { transform: translateX(0); }
       100% { transform: translateX(-400px); }
     }
   </style>
 
-  <!-- Dark Background -->
-  <rect x="0" y="0" width="800" height="180" class="banner-bg" />
+  <!-- Background -->
+  <rect width="800" height="180" class="banner-bg" />
 
-  <!-- Background Visualizer Waves -->
+  <!-- Awwwards-style Dot Matrix Grid Overlay -->
+  <rect width="800" height="180" fill="url(#dot-grid)" />
+
+  <!-- Single Oscilloscope Wave Grid -->
   <g>
-    <!-- Wave 1: Ripples Right -->
-    <path d="M -400 100 C -300 60, -100 140, 0 100 C 100 60, 300 140, 400 100 C 500 60, 700 140, 800 100 C 900 60, 1100 140, 1200 100" class="wave-purple" />
-    
-    <!-- Wave 2: Ripples Left -->
-    <path d="M -400 80 C -300 120, -100 40, 0 80 C 100 120, 300 40, 400 80 C 500 120, 700 40, 800 80 C 900 120, 1100 40, 1200 80" class="wave-magenta" />
+    <!-- Wave 1 (Rippling Forward) -->
+    <path d="M -400 95 C -300 55, -100 135, 0 95 C 100 55, 300 135, 400 95 C 500 55, 700 135, 800 95 C 900 55, 1100 135, 1200 95" class="wave-1" />
+    <!-- Wave 2 (Rippling Backward) -->
+    <path d="M -400 85 C -300 125, -100 45, 0 85 C 100 125, 300 45, 400 85 C 500 125, 700 45, 800 85 C 900 125, 1100 45, 1200 85" class="wave-2" />
   </g>
 
-  <!-- Name and Taglines (iPhone styled typography) -->
-  <text x="400" y="75" class="text-name" text-anchor="middle">SHARVIN SAMEER MHATRE</text>
-  <text x="400" y="112" class="text-tagline" text-anchor="middle">ELECTRONICS &amp; COMPUTER SCIENCE ENGINEER | TU MUNICH MS ROBOTICS</text>
-  <text x="400" y="138" class="text-details" text-anchor="middle">Axiom: The Kyber Collective Founder  •  Indian Air Force Technical Branch Candidate</text>
+  <!-- Typography Layout -->
+  <text x="400" y="72" class="text-name" text-anchor="middle">Sharvin Sameer Mhatre</text>
+  <text x="400" y="106" class="text-tagline" text-anchor="middle">Electronics &amp; Computer Science Engineer</text>
+  <text x="400" y="132" class="text-details" text-anchor="middle">Founder of Axiom: The Kyber Collective</text>
 </svg>
