@@ -110,11 +110,20 @@
 
 ---
 
-## 📊 3D CONTRIBUTION KINETICS
+## 📊 3D CONTRIBUTION KINETICS (ISOMETRIC MATRIX)
 
-<div align="center">
-  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Contribution Graph" width="95%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-3d-contrib/profile-night-view.svg'" />
-</div>
+<table width="100%">
+  <tr>
+    <td width="50%" align="center">
+      <strong>🌌 SYSTEM CHRONOLOGY (NIGHT VIEW)</strong><br/><br/>
+      <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Night View Graph" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-3d-contrib/profile-night-view.svg'" />
+    </td>
+    <td width="50%" align="center">
+      <strong>🌀 KINETIC GRID (ANIMATED SEASONAL)</strong><br/><br/>
+      <img src="./profile-3d-contrib/profile-season-animate.svg" alt="3D Season Animate Graph" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/profile-3d-contrib/profile-season-animate.svg'" />
+    </td>
+  </tr>
+</table>
 
 ---
 
