@@ -40,6 +40,64 @@
   <img src="./combat_sim.svg" alt="Combat Engagement Simulator" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/combat_sim.svg'" />
 </div>
 
+<details>
+  <summary><strong>🎮 INITIALIZE INTERACTIVE LIGHTSABER DUEL (README CHRONOLOGY)</strong></summary>
+  <br/>
+  
+  <p><strong>COMBAT VECTOR:</strong> You stand as Jedi Knight Sharvin facing Lord Vader. The Kyber purple blade hums in your hand. Select your opening action block:</p>
+  
+  <blockquote>
+    <details>
+      <summary><strong>🔥 ACTION: LIGHTSABER STRIKE</strong></summary>
+      <br/>
+      <p>⚔️ <em>You strike with a high overhead slash! Vader blocks with Sith Crimson force, sparks erupt, and he counter-swings!</em></p>
+      <p><strong>DECISION MATRIX:</strong> Vader's heavy sweep is coming! Select your defense now:</p>
+      <blockquote>
+        <details>
+          <summary><strong>🛡️ MANEUVER: FORCE DEFLECT</strong></summary>
+          <br/>
+          <p>✨ <strong>Deflection Successful!</strong> You deflect his strike, spinning to slice Vader's chest plate. <strong>Vader HP is now at 35%!</strong></p>
+          <p>Deliver the finishing strike:</p>
+          <blockquote>
+            <details>
+              <summary><strong>⚡ FINAL BATTLE OPERATION</strong></summary>
+              <br/>
+              <p>🏆 <strong>VICTORY!</strong> Darth Vader is defeated and retreats into the shadows. The local Kyber matrix stabilizes. Systems nominal.</p>
+            </details>
+          </blockquote>
+        </details>
+        <details>
+          <summary><strong>✨ MANEUVER: FORCE FOCUS (HEAL)</strong></summary>
+          <br/>
+          <p>❌ <strong>Critical Error:</strong> You attempt to heal mid-combat, leaving your guard open! Vader's blade strikes through. <strong>Jedi defeated. Game Over.</strong></p>
+        </details>
+      </blockquote>
+    </details>
+    
+    <details>
+      <summary><strong>✨ ACTION: FORCE FOCUS (HEAL)</strong></summary>
+      <br/>
+      <p>💚 <em>You channel the Force, stabilizing your shield matrix. However, Vader strikes while you focus!</em></p>
+      <p><strong>DECISION MATRIX:</strong> Your HP is holding at 60%. Deliver a counter-strike:</p>
+      <blockquote>
+        <details>
+          <summary><strong>🔥 MANEUVER: FLANKING STRIKE</strong></summary>
+          <br/>
+          <p>⚡ <strong>Direct Hit!</strong> You catch Vader off-balance, draining his HP! <strong>Vader HP is now 20%!</strong></p>
+          <p>Finish the duel:</p>
+          <blockquote>
+            <details>
+              <summary><strong>⚔️ STRIKE THE FINAL BLOW</strong></summary>
+              <br/>
+              <p>🏆 <strong>VICTORY!</strong> Vader's defenses crumble. You win the engagement! Kyber shield resonance active.</p>
+            </details>
+          </blockquote>
+        </details>
+      </blockquote>
+    </details>
+  </blockquote>
+</details>
+
 <img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 🗃️ TELEMETRY GRID & CAMPAIGN LOGS
@@ -158,6 +216,13 @@
 <img src="./glowing_divider.svg" alt="Divider" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/glowing_divider.svg'" />
 
 ## 📈 SYSTEM STATUS CARDS (DRACULA OPERATIONAL MATRIX)
+
+<div align="center">
+  <strong>🖥️ LIVE LOGIC SYSTEM PROCESSOR (DYNAMIC HUD)</strong><br/><br/>
+  <img src="./live_hud_diagnostics.svg" alt="Live Diagnostic HUD" width="100%" onerror="this.src='https://raw.githubusercontent.com/LuxShar007/LuxShar007/main/live_hud_diagnostics.svg'" />
+</div>
+
+<br/>
 
 <table width="100%">
   <tr>
