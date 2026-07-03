@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180">
   <defs>
     <!-- Ultra-subtle Glow for Waves -->
-    <filter id="clean-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="wave-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -10,21 +10,23 @@
     </filter>
 
     <!-- Dot Matrix Pattern -->
-    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.75" fill="#334155" opacity="0.35" />
+    <pattern id="dot-grid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="0.75" fill="#334155" opacity="0.4" />
     </pattern>
 
-    <!-- Glowing Wave Gradients -->
-    <linearGradient id="wave-purple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.6" />
+    <!-- Cyberpunk Sith/Jedi Grid Gradient -->
+    <linearGradient id="grid-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="35%" stop-color="#f43f5e" stop-opacity="0.5" />
+      <stop offset="50%" stop-color="#00d2ff" stop-opacity="0.3" />
+      <stop offset="65%" stop-color="#f43f5e" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="wave-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.5" />
-      <stop offset="50%" stop-color="#fda4af" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.5" />
+    <!-- Header Text Gradient -->
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#cbd5e1" />
     </linearGradient>
   </defs>
 
@@ -34,15 +36,15 @@
     }
     .text-name {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      font-size: 32px;
-      font-weight: 700;
-      fill: #ffffff;
-      letter-spacing: -0.5px;
+      font-size: 34px;
+      font-weight: 800;
+      fill: url(#text-grad);
+      letter-spacing: -0.75px;
     }
     .text-tagline {
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
       fill: #f43f5e;
       letter-spacing: 0.5px;
     }
@@ -83,19 +85,147 @@
   <!-- Background -->
   <rect width="800" height="180" class="banner-bg" />
 
-  <!-- Awwwards-style Dot Matrix Grid Overlay -->
+  <!-- Awwwards Dot Grid Overlay -->
   <rect width="800" height="180" fill="url(#dot-grid)" />
 
-  <!-- Single Oscilloscope Wave Grid -->
+  <!-- 3D Liquidifying perspective grid lines -->
   <g>
-    <!-- Wave 1 (Rippling Forward) -->
-    <path d="M -400 95 C -300 55, -100 135, 0 95 C 100 55, 300 135, 400 95 C 500 55, 700 135, 800 95 C 900 55, 1100 135, 1200 95" class="wave-1" />
-    <!-- Wave 2 (Rippling Backward) -->
-    <path d="M -400 85 C -300 125, -100 45, 0 85 C 100 125, 300 45, 400 85 C 500 125, 700 45, 800 85 C 900 125, 1100 45, 1200 85" class="wave-2" />
+    <path d="M 400 180 Q 49.99999999999999 75 -300.0 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="7.00s" repeatCount="indefinite" values="M 400 180 Q 49.99999999999999 75 -300.0 -30; M 400 180 Q 50.00000000000001 75 -300.0 -30; M 400 180 Q 49.99999999999999 75 -300.0 -30" />
+    </path>
+    <path d="M 400 180 Q 54.95927190062181 75 -248.14814814814815 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="8.17s" repeatCount="indefinite" values="M 400 180 Q 54.95927190062181 75 -248.14814814814815 -30; M 400 180 Q 96.89257995123003 75 -248.14814814814815 -30; M 400 180 Q 54.95927190062181 75 -248.14814814814815 -30" />
+    </path>
+    <path d="M 400 180 Q 63.78343382931368 75 -196.2962962962963 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.15s" repeatCount="indefinite" values="M 400 180 Q 63.78343382931368 75 -196.2962962962963 -30; M 400 180 Q 139.92026987439002 75 -196.2962962962963 -30; M 400 180 Q 63.78343382931368 75 -196.2962962962963 -30" />
+    </path>
+    <path d="M 400 180 Q 79.62494096826855 75 -144.44444444444446 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.80s" repeatCount="indefinite" values="M 400 180 Q 79.62494096826855 75 -144.44444444444446 -30; M 400 180 Q 175.93061458728698 75 -144.44444444444446 -30; M 400 180 Q 79.62494096826855 75 -144.44444444444446 -30" />
+    </path>
+    <path d="M 400 180 Q 104.34270554838452 75 -92.59259259259261 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="10.00s" repeatCount="indefinite" values="M 400 180 Q 104.34270554838452 75 -92.59259259259261 -30; M 400 180 Q 203.06470185902288 75 -92.59259259259261 -30; M 400 180 Q 104.34270554838452 75 -92.59259259259261 -30" />
+    </path>
+    <path d="M 400 180 Q 138.1594340984232 75 -40.74074074074076 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.73s" repeatCount="indefinite" values="M 400 180 Q 138.1594340984232 75 -40.74074074074076 -30; M 400 180 Q 221.09982516083605 75 -40.74074074074076 -30; M 400 180 Q 138.1594340984232 75 -40.74074074074076 -30" />
+    </path>
+    <path d="M 400 180 Q 179.6205748172914 75 11.111111111111086 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.03s" repeatCount="indefinite" values="M 400 180 Q 179.6205748172914 75 11.111111111111086 -30; M 400 180 Q 231.49053629381967 75 11.111111111111086 -30; M 400 180 Q 179.6205748172914 75 11.111111111111086 -30" />
+    </path>
+    <path d="M 400 180 Q 225.8624425092157 75 62.96296296296293 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="8.00s" repeatCount="indefinite" values="M 400 180 Q 225.8624425092157 75 62.96296296296293 -30; M 400 180 Q 237.10052045374724 75 62.96296296296293 -30; M 400 180 Q 225.8624425092157 75 62.96296296296293 -30" />
+    </path>
+    <path d="M 400 180 Q 273.140096248119 75 114.81481481481478 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="6.82s" repeatCount="indefinite" values="M 400 180 Q 273.140096248119 75 114.81481481481478 -30; M 400 180 Q 241.67471856669576 75 114.81481481481478 -30; M 400 180 Q 273.140096248119 75 114.81481481481478 -30" />
+    </path>
+    <path d="M 400 180 Q 317.51766339515075 75 166.66666666666663 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="5.67s" repeatCount="indefinite" values="M 400 180 Q 317.51766339515075 75 166.66666666666663 -30; M 400 180 Q 249.14900327151588 75 166.66666666666663 -30; M 400 180 Q 317.51766339515075 75 166.66666666666663 -30" />
+    </path>
+    <path d="M 400 180 Q 355.5938590304132 75 218.51851851851848 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.73s" repeatCount="indefinite" values="M 400 180 Q 355.5938590304132 75 218.51851851851848 -30; M 400 180 Q 262.92465948810525 75 218.51851851851848 -30; M 400 180 Q 355.5938590304132 75 218.51851851851848 -30" />
+    </path>
+    <path d="M 400 180 Q 385.1289621101337 75 270.3703703703703 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.15s" repeatCount="indefinite" values="M 400 180 Q 385.1289621101337 75 270.3703703703703 -30; M 400 180 Q 285.2414082602366 75 270.3703703703703 -30; M 400 180 Q 385.1289621101337 75 270.3703703703703 -30" />
+    </path>
+    <path d="M 400 180 Q 405.4576746437791 75 322.2222222222222 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.01s" repeatCount="indefinite" values="M 400 180 Q 405.4576746437791 75 322.2222222222222 -30; M 400 180 Q 316.76454757844306 75 322.2222222222222 -30; M 400 180 Q 405.4576746437791 75 322.2222222222222 -30" />
+    </path>
+    <path d="M 400 180 Q 417.6117594581073 75 374.074074074074 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.35s" repeatCount="indefinite" values="M 400 180 Q 417.6117594581073 75 374.074074074074 -30; M 400 180 Q 356.4623146159667 75 374.074074074074 -30; M 400 180 Q 417.6117594581073 75 374.074074074074 -30" />
+    </path>
+    <path d="M 400 180 Q 424.12985010505 75 425.92592592592587 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="5.11s" repeatCount="indefinite" values="M 400 180 Q 424.12985010505 75 425.92592592592587 -30; M 400 180 Q 401.79607582087584 75 425.92592592592587 -30; M 400 180 Q 424.12985010505 75 425.92592592592587 -30" />
+    </path>
+    <path d="M 400 180 Q 428.5894916209131 75 477.7777777777778 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="6.16s" repeatCount="indefinite" values="M 400 180 Q 428.5894916209131 75 477.7777777777778 -30; M 400 180 Q 449.1882861568647 75 477.7777777777778 -30; M 400 180 Q 428.5894916209131 75 477.7777777777778 -30" />
+    </path>
+    <path d="M 400 180 Q 434.9476734450242 75 529.6296296296296 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="7.35s" repeatCount="indefinite" values="M 400 180 Q 434.9476734450242 75 529.6296296296296 -30; M 400 180 Q 494.6819561846054 75 529.6296296296296 -30; M 400 180 Q 434.9476734450242 75 529.6296296296296 -30" />
+    </path>
+    <path d="M 400 180 Q 446.81141742071884 75 581.4814814814815 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="8.48s" repeatCount="indefinite" values="M 400 180 Q 446.81141742071884 75 581.4814814814815 -30; M 400 180 Q 534.6700640607627 75 581.4814814814815 -30; M 400 180 Q 446.81141742071884 75 581.4814814814815 -30" />
+    </path>
+    <path d="M 400 180 Q 466.77287710415163 75 633.3333333333333 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.38s" repeatCount="indefinite" values="M 400 180 Q 466.77287710415163 75 633.3333333333333 -30; M 400 180 Q 566.5604562291816 75 633.3333333333333 -30; M 400 180 Q 466.77287710415163 75 633.3333333333333 -30" />
+    </path>
+    <path d="M 400 180 Q 495.93151290877506 75 685.1851851851852 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.90s" repeatCount="indefinite" values="M 400 180 Q 495.93151290877506 75 685.1851851851852 -30; M 400 180 Q 589.2536722764102 75 685.1851851851852 -30; M 400 180 Q 495.93151290877506 75 685.1851851851852 -30" />
+    </path>
+    <path d="M 400 180 Q 533.6914229725777 75 737.037037037037 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.97s" repeatCount="indefinite" values="M 400 180 Q 533.6914229725777 75 737.037037037037 -30; M 400 180 Q 603.3456140644593 75 737.037037037037 -30; M 400 180 Q 533.6914229725777 75 737.037037037037 -30" />
+    </path>
+    <path d="M 400 180 Q 577.8711887806351 75 788.8888888888889 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.56s" repeatCount="indefinite" values="M 400 180 Q 577.8711887806351 75 788.8888888888889 -30; M 400 180 Q 611.0177001082538 75 788.8888888888889 -30; M 400 180 Q 577.8711887806351 75 788.8888888888889 -30" />
+    </path>
+    <path d="M 400 180 Q 625.1059871404008 75 840.7407407407406 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="8.75s" repeatCount="indefinite" values="M 400 180 Q 625.1059871404008 75 840.7407407407406 -30; M 400 180 Q 615.6347536003399 75 840.7407407407406 -30; M 400 180 Q 625.1059871404008 75 840.7407407407406 -30" />
+    </path>
+    <path d="M 400 180 Q 671.4678451631361 75 892.5925925925926 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="7.67s" repeatCount="indefinite" values="M 400 180 Q 671.4678451631361 75 892.5925925925926 -30; M 400 180 Q 621.1247474294565 75 892.5925925925926 -30; M 400 180 Q 671.4678451631361 75 892.5925925925926 -30" />
+    </path>
+    <path d="M 400 180 Q 713.1897034944986 75 944.4444444444443 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="6.48s" repeatCount="indefinite" values="M 400 180 Q 713.1897034944986 75 944.4444444444443 -30; M 400 180 Q 631.2547409499457 75 944.4444444444443 -30; M 400 180 Q 713.1897034944986 75 944.4444444444443 -30" />
+    </path>
+    <path d="M 400 180 Q 747.3598175345082 75 996.2962962962963 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="5.37s" repeatCount="indefinite" values="M 400 180 Q 747.3598175345082 75 996.2962962962963 -30; M 400 180 Q 648.9364787617881 75 996.2962962962963 -30; M 400 180 Q 747.3598175345082 75 996.2962962962963 -30" />
+    </path>
+    <path d="M 400 180 Q 772.4584941364562 75 1048.148148148148 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.52s" repeatCount="indefinite" values="M 400 180 Q 772.4584941364562 75 1048.148148148148 -30; M 400 180 Q 675.6896540116918 75 1048.148148148148 -30; M 400 180 Q 772.4584941364562 75 1048.148148148148 -30" />
+    </path>
+    <path d="M 400 180 Q 788.6382243777994 75 1100.0 -30" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.06s" repeatCount="indefinite" values="M 400 180 Q 788.6382243777994 75 1100.0 -30; M 400 180 Q 711.3617756222006 75 1100.0 -30; M 400 180 Q 788.6382243777994 75 1100.0 -30" />
+    </path>
+    <path d="M -150 -10.0 Q 400 -10.0 950 -10.0" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="12.00s" repeatCount="indefinite" values="M -150 -10.0 Q 400 -10.0 950 -10.0; M -150 -10.0 Q 400 -10.0 950 -10.0; M -150 -10.0 Q 400 -10.0 950 -10.0" />
+    </path>
+    <path d="M -150 -8.548592594481685 Q 400 1.2051675228814034 950 -8.548592594481685" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="11.91s" repeatCount="indefinite" values="M -150 -8.548592594481685 Q 400 1.2051675228814034 950 -8.548592594481685; M -150 -8.548592594481685 Q 400 -18.302352711844772 950 -8.548592594481685; M -150 -8.548592594481685 Q 400 1.2051675228814034 950 -8.548592594481685" />
+    </path>
+    <path d="M -150 -4.945905862215458 Q 400 12.084510221412174 950 -4.945905862215458" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="11.65s" repeatCount="indefinite" values="M -150 -4.945905862215458 Q 400 12.084510221412174 950 -4.945905862215458; M -150 -4.945905862215458 Q 400 -21.97632194584309 950 -4.945905862215458; M -150 -4.945905862215458 Q 400 12.084510221412174 950 -4.945905862215458" />
+    </path>
+    <path d="M -150 0.48594542710523214 Q 400 20.46790450845186 950 0.48594542710523214" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="11.24s" repeatCount="indefinite" values="M -150 0.48594542710523214 Q 400 20.46790450845186 950 0.48594542710523214; M -150 0.48594542710523214 Q 400 -19.496013654241395 950 0.48594542710523214; M -150 0.48594542710523214 Q 400 20.46790450845186 950 0.48594542710523214" />
+    </path>
+    <path d="M -150 7.599377994399884 Q 400 25.45818137348697 950 7.599377994399884" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="10.68s" repeatCount="indefinite" values="M -150 7.599377994399884 Q 400 25.45818137348697 950 7.599377994399884; M -150 7.599377994399884 Q 400 -10.259425384687201 950 7.599377994399884; M -150 7.599377994399884 Q 400 25.45818137348697 950 7.599377994399884" />
+    </path>
+    <path d="M -150 16.29876428077203 Q 400 27.498918419549653 950 16.29876428077203" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="10.00s" repeatCount="indefinite" values="M -150 16.29876428077203 Q 400 27.498918419549653 950 16.29876428077203; M -150 16.29876428077203 Q 400 5.098610141994406 950 16.29876428077203; M -150 16.29876428077203 Q 400 27.498918419549653 950 16.29876428077203" />
+    </path>
+    <path d="M -150 26.51418279303551 Q 400 28.211251497022996 950 26.51418279303551" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="9.24s" repeatCount="indefinite" values="M -150 26.51418279303551 Q 400 28.211251497022996 950 26.51418279303551; M -150 26.51418279303551 Q 400 24.817114089048022 950 26.51418279303551; M -150 26.51418279303551 Q 400 28.211251497022996 950 26.51418279303551" />
+    </path>
+    <path d="M -150 38.19098539070492 Q 400 29.953974265867146 950 38.19098539070492" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="8.42s" repeatCount="indefinite" values="M -150 38.19098539070492 Q 400 29.953974265867146 950 38.19098539070492; M -150 38.19098539070492 Q 400 46.42799651554269 950 38.19098539070492; M -150 38.19098539070492 Q 400 29.953974265867146 950 38.19098539070492" />
+    </path>
+    <path d="M -150 51.284593706744936 Q 400 35.20540722935241 950 51.284593706744936" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="7.58s" repeatCount="indefinite" values="M -150 51.284593706744936 Q 400 35.20540722935241 950 51.284593706744936; M -150 51.284593706744936 Q 400 67.36378018413745 950 51.284593706744936; M -150 51.284593706744936 Q 400 35.20540722935241 950 51.284593706744936" />
+    </path>
+    <path d="M -150 65.75753787818303 Q 400 45.9197109199345 950 65.75753787818303" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="6.76s" repeatCount="indefinite" values="M -150 65.75753787818303 Q 400 45.9197109199345 950 65.75753787818303; M -150 65.75753787818303 Q 400 85.59536483643156 950 65.75753787818303; M -150 65.75753787818303 Q 400 45.9197109199345 950 65.75753787818303" />
+    </path>
+    <path d="M -150 81.57761623447232 Q 400 63.01924312163433 950 81.57761623447232" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="6.00s" repeatCount="indefinite" values="M -150 81.57761623447232 Q 400 63.01924312163433 950 81.57761623447232; M -150 81.57761623447232 Q 400 100.1359893473103 950 81.57761623447232; M -150 81.57761623447232 Q 400 63.01924312163433 950 81.57761623447232" />
+    </path>
+    <path d="M -150 98.71667662941674 Q 400 86.15091644344054 950 98.71667662941674" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="5.32s" repeatCount="indefinite" values="M -150 98.71667662941674 Q 400 86.15091644344054 950 98.71667662941674; M -150 98.71667662941674 Q 400 111.28243681539294 950 98.71667662941674; M -150 98.71667662941674 Q 400 86.15091644344054 950 98.71667662941674" />
+    </path>
+    <path d="M -150 117.14976959509885 Q 400 113.76787333496895 950 117.14976959509885" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.76s" repeatCount="indefinite" values="M -150 117.14976959509885 Q 400 113.76787333496895 950 117.14976959509885; M -150 117.14976959509885 Q 400 120.53166585522874 950 117.14976959509885; M -150 117.14976959509885 Q 400 113.76787333496895 950 117.14976959509885" />
+    </path>
+    <path d="M -150 136.85453714220375 Q 400 143.51538478484719 950 136.85453714220375" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.35s" repeatCount="indefinite" values="M -150 136.85453714220375 Q 400 143.51538478484719 950 136.85453714220375; M -150 136.85453714220375 Q 400 130.19368949956032 950 136.85453714220375; M -150 136.85453714220375 Q 400 143.51538478484719 950 136.85453714220375" />
+    </path>
+    <path d="M -150 157.8107579106938 Q 400 172.82273379744214 950 157.8107579106938" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.09s" repeatCount="indefinite" values="M -150 157.8107579106938 Q 400 172.82273379744214 950 157.8107579106938; M -150 157.8107579106938 Q 400 142.79878202394548 950 157.8107579106938; M -150 157.8107579106938 Q 400 172.82273379744214 950 157.8107579106938" />
+    </path>
+    <path d="M -150 180.0 Q 400 199.55060235330194 950 180.0" fill="none" stroke="url(#grid-gradient)" stroke-width="0.8" opacity="0.35" filter="url(#wave-glow)">
+      <animate attributeName="d" dur="4.00s" repeatCount="indefinite" values="M -150 180.0 Q 400 199.55060235330194 950 180.0; M -150 180.0 Q 400 160.44939764669806 950 180.0; M -150 180.0 Q 400 199.55060235330194 950 180.0" />
+    </path>
   </g>
 
-  <!-- Typography Layout -->
-  <text x="400" y="72" class="text-name" text-anchor="middle">Sharvin Sameer Mhatre</text>
+  <!-- Typography overlay (SF Pro typography style) -->
+  <text x="400" y="74" class="text-name" text-anchor="middle">Sharvin Sameer Mhatre</text>
   <text x="400" y="106" class="text-tagline" text-anchor="middle">Electronics &amp; Computer Science Engineer</text>
   <text x="400" y="132" class="text-details" text-anchor="middle">Founder of Axiom: The Kyber Collective</text>
 </svg>
