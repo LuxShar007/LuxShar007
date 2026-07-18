@@ -18,16 +18,16 @@
 ## 📡 COMMUNICATIONS MATRIX ARRAY
 
 <div align="center">
-  <a href="https://linkedin.com/in/sharvin-mhatre-placeholder" target="_blank">
+  <a href="https://linkedin.com/in/shar095" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Array-a855f7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Array" />
   </a>&nbsp;&nbsp;
-  <a href="https://www.researchgate.net/profile/Sharvin-Mhatre-placeholder" target="_blank">
+  <a href="https://www.researchgate.net/profile/Sharvin-Mhatre" target="_blank">
     <img src="https://img.shields.io/badge/ResearchGate-Matrix-f43f5e?style=for-the-badge&logo=researchgate&logoColor=white" alt="ResearchGate Matrix" />
   </a>&nbsp;&nbsp;
-  <a href="https://www.hackster.io/sharvin-mhatre-placeholder" target="_blank">
+  <a href="https://www.hackster.io/sharvin-mhatre-placeholder](https://www.hackster.io/sharvinmhatre95" target="_blank">
     <img src="https://img.shields.io/badge/Hackster.io-Hardware-a855f7?style=for-the-badge&logo=hackster&logoColor=white" alt="Hackster Hardware" />
   </a>&nbsp;&nbsp;
-  <a href="mailto:sharvin.mhatre.placeholder@gmail.com">
+  <a href="mailto:sharvinmhatre95@gmail.com">
     <img src="https://img.shields.io/badge/Email-Operational-f43f5e?style=for-the-badge&logo=gmail&logoColor=white" alt="Operational Email" />
   </a>
 </div>
